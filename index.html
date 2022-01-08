@@ -95,6 +95,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <li class="bold">
         <!-- mdi-av-web small
              mdi-av-my-library-books small-->
+        <a aria-label="Navigate to the Publications section" href="#publications" class="waves-effect waves-dark purple-text"><i class="mdi-book small"></i><span>Publications</span></a>
+      </li>
+      <li class="bold">
+        <!-- mdi-av-web small
+             mdi-av-my-library-books small-->
         <a aria-label="Navigate to the Projects section" href="#projects" class="waves-effect waves-dark purple-text"><i
             class="mdi-av-my-library-books small"></i><span>Projects</span></a>
       </li>
@@ -110,6 +115,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             class="mdi-action-assessment small"></i><span>Skills</span></a>
       </li>
       
+
+
       <li class="bold">
         <!--
         ICONS:
@@ -167,6 +174,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             class="mdi-action-trending-up small"></i><span>Experience</span></a>
       </li>
       <li class="bold">
+        <a aria-label="Navigate to the Publications section" href="#publications" class="waves-effect waves-dark purple-text"><i class="mdi-book small"></i><span>Publications</span></a>
+      </li>
+      <li class="bold">
         <a aria-label="Navigate to the Projects section" href="#projects" class="waves-effect waves-dark purple-text"><i
             class="mdi-av-my-library-books small"></i><span>Projects</span></a>
       </li>
@@ -201,7 +211,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <div class="content section-padding valign" style="margin-left: 10%; margin-top: 50px;">
             <div class="caption">
               <h2>Hi, I'm <span class="purple">Aniruddha Kalkar.</span></h2>
-              <h5 style="color:#fff">A <span class="typing" style="font-weight: 300; color:#004d40"></span></h5>
+              <h5 style="color:#fff">A <span class="typing" style="font-weight: 300; color:purple;"></span></h5>
               <!-- <h5 style="color:#00796b">A <span class="typing" style="font-weight: 300; color:#fff"></span></h5> -->
               <h5>Highly Driven Engineer with interests in machine learning , computer vision, natural language processing and artificial intelligence.</h5>
             </div>
@@ -295,8 +305,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <span>Nov 2021 - Dec 2021 | Remote</span>
           </div>
         </div>
-
         
+        <!-- Experience 2 -->
         <div class="card">
           <div class="card-content">
             <div class="row">
@@ -334,7 +344,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           </div>
         </div>
 
-        <!-- Experience 2 -->
+        <!-- Experience 3 -->
         <div class="card">
           <div class="card-content">
             <div class="row">
@@ -346,21 +356,20 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               <!-- <div class="col s12 m10"> -->
               <div class="col s12 m10">
                 <p>
-                  <span class="card-title"><a href="#experience" class="purple-text hoverline">Mtag
-                      Innovations</a></span>
+                  <span class="card-title"><a href="#experience" class="purple-text hoverline">Tata Consultancy Services</a></span>
                 </p>
               </div>
             </div>
-            <div class="role brown-text text-darken-2">Software Developer</div>
+            <div class="role brown-text text-darken-2">Reseach Intern</div>
             <ul>
               <li>
-                Programmed a cloud-based web app using Flask and JavaScript aimed at storing, visualizing, and tracking temperature and humidity of each drug container to estimate the degradation of the drug.
+               Analyzed Saliency driven label placement, Object Detection and Tracking in videos.
               </li>
               <li>
-                Created an alert system to send notifications and emails when the parameters exceed the threshold.
+                Developed ”SmartOverlays”, a project in Computer Vision, Deep Learning and AR.
               </li>
               <li>
-                <b>Tools:</b> Python, Flask, JavaScript
+                <b>Tools:</b> Python, Pytorch, Tensorflow, OpenCV
               </li>
             </ul>
           </div>
@@ -369,48 +378,59 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           </div>
         </div>
 
-        <!-- Experience 3 -->
-        <div class="card">
-          <div class="card-content">
-            <div class="row">
-              <div class="col s12 m2">
-                <a href="https://www.cignex.com" target="_blank"><img alt="Cignex logo"
-                    src="/assets/img/exp-cignex-logo.png" class="responsive-img center-block" /></a>
-              </div>
-              <div class="col s12 m10">
-                <p>
-                  <span class="card-title"><a href="https://www.cignex.com" target="_blank"
-                      class="purple-text hoverline">CIGNEX
-                      Datamatics </a></span>
-                </p>
-              </div>
-            </div>
-            <div class="role brown-text text-darken-2">Project Trainee</div>
-            <ul>
-              <li>
-                Designed a library management system for a local library, where we undertook activities like requirement
-                elicitation, preparing Data Flow
-                and Entity-Relationship diagrams.
-              </li>
-              <li>
-                Delivered a solution for a POC involving Automatic Financial Document Classifier using Natural Language
-                Processing and Support Vector
-                Machines with 96% accuracy on the company’s data.
-              </li>
-              <li>
-                <b>Tools:</b> Python, Scikit-learn, NLTK
-              </li>
-            </ul>
-          </div>
-          <div class="card-action">
-            <span>June 2017 - July 2017 | Ahmedabad, India</span>
-          </div>
-        </div>
 
       </div>
     </section>
 
-    <!-- Fourth Section: Projects -->
+    <!-- Fourth Section: Publications -->
+    <section id="publications" class="section scrollspy">
+      <h3 class="page-title white-text purple">Experience</h3>
+      <div class="container">
+
+        <div class="col s12 m2">
+            <div class="card">
+              <div class="card-content">
+                <span class="card-title activator purple-text hoverline">SmartOverlays: A Visual Saliency Driven Label Placement for Intelligent Human-Computer Interfaces<i
+                    class="mdi-navigation-more-vert right"></i></span>
+                <p>
+                  IEEE Winter Conference on Applications of Computer Vision (WACV)
+                </p>
+              </div>
+              <div class="card-reveal">
+                <!-- TODO: change this -- only close button -->
+                <!-- <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> -->
+                <span class="card-title grey-text"><small>Accomplishments</small><i
+                    class="mdi-navigation-close right"></i></span>
+                <ul>
+                  
+                  <li>Register/login to the web app(with OAuth-based Google Sign-In).</li>
+                  <li>SmartOverlays, first identifies the objects and generates corresponding labels using a YOLOv2 [10] in a video frame; at the same time, Saliency Attention Model (SAM) [3] learns eye fixation points that aid in predicting saliency maps for label placement; finally, computes Voronoi partitions of the video frame, choosing the centroids of objects as seed points, to place labels for satisfying the proximity constraints with the object of interest. </li>
+                  <li>In addition, our approach incorporates tracking the detected objects in a frame to facilitate temporal coherence between frames that enhances readability of labels. </li>
+                  <li> We measure the effectiveness of SmartOverlays framework using two objective metrics: (a) Label Occlusion over Saliency (LOS), and, (b) temporal jitter metric to quantify jitter in the label placement.</li>
+                  <li><b>TAuthors:</b> Srinidhi Hegde, Jitendra Maurya, Aniruddha Kalkar, Ramya Hebbalaguppe</li>
+                  <li><b>Domains:</b> Computer Vision, Machine Learning, Augmented Reality, Deep Learning, Visual Saliency</li>
+
+
+                </ul>
+                <div class="card-action">
+                  <a aria-label="Visit " href="https://openaccess.thecvf.com/content_ICCVW_2019/papers/OpenEDS/Hegde_SmartOverlays_A_Visual_Saliency_Driven_Label_Placement_for_Intelligent_Human-Computer_ICCVW_2019_paper.pdf" target="_blank" data-position="top"
+                    data-tooltip="View Online"
+                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
+                      class="fa fa-external-link"></i></a>
+                  <a aria-label="Visit the GitHub repo for  project" href="https://ilab-ar.github.io/SmartOverlays/"
+                    target="_blank" data-position="top" data-tooltip="View Source"
+                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
+                      class="fa fa-github"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+      </div>
+    </section>
+
+    <!-- Fifth Section: Projects -->
     <section id="projects" class="section scrollspy">
       <h3 class="page-title white-text purple">Projects</h3>
       <div class="container">
@@ -719,7 +739,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
     </section>
 
-    <!-- Fifth Section: Skills -->
+    <!-- Sixth Section: Skills -->
     <section id="skills" class="section scrollspy">
       <h3 class="page-title white-text purple">Skills</h3>
       <div class="container">
@@ -882,7 +902,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                   <ul>
                     <li>Analysis of Algorithms</li>
                     <li>Foundations of Artificial Intelligence</li>
-                    <li>Machine Learning</li>                    
+                    <li>Machine Learning</li> 
+                    <li>Robustness and Generalization in Natural Langiage Processing</li>                   
                   </ul>
                   </p>
 
@@ -902,7 +923,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <p>
                   <b>Degree: </b>Bachelor of Technology in Computer Science
                   <br>
-                  <b>CGPA: </b>3.13/4.33
+                  <b>CGPA: </b>8.79/10
                 </p>
 
                 <ul>

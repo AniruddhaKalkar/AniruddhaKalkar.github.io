@@ -291,7 +291,7 @@ li.logo span {
 }
 
 .container {
-  width: 95%;
+  width: 100%;
 }
 
 h3 {
@@ -320,7 +320,7 @@ h3 {
 } */
 
 #intro.section {
-  background: #a7ffeb repeat;
+  background: #d1a7ff  repeat;
   position: relative;
 }
 
@@ -568,7 +568,7 @@ small {
 
 @media (min-width: 1200px) {
   #experience .container {
-    width: 860px;
+    width: 1000px;
   }
 }
 
