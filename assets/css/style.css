@@ -275,7 +275,7 @@ ul.table-of-contents li:not(.logo) a.active, ul.table-of-contents li:not(.logo) 
 }
 
 ul.side-nav.fixed.table-of-contents li:not(.logo) a span, ul#slide-out li:not(.logo) a span {
-  color: #333 !important;
+  color: #fff !important;
 }
 
 li.logo span {
@@ -473,7 +473,7 @@ a.hoverline {
 } */
 
 a.hoverline:hover {
-  border-bottom: 3px solid #004d40 !important;
+  border-bottom: 3px solid #0eece7!important;
 }
 
 #skills .card.large {
@@ -597,7 +597,7 @@ small {
     width: 100%;
   }
   nav {
-    background: #fff;
+    background:#000;
     height: 64px;
     position: absolute;
   }
