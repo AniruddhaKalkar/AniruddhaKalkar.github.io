@@ -529,15 +529,33 @@
 .publication-item {
     margin-bottom: 1.5rem;
     padding: 1rem;
-    background-color: rgba(255, 255, 255, 0.08); /* Use solid fallback color */
-    backdrop-filter: blur(10px); /* Blur effect for supported browsers */
-    -webkit-backdrop-filter: blur(10px); /* Safari/iOS-specific blur */
-    border: 1px solid rgba(255, 255, 255, 0.2); /* Slightly increased border opacity for visibility */
+    /* Add solid background fallback first */
+    background-color: rgb(30, 30, 30); /* Dark mode fallback */
+    /* Layer the transparent background on top */
+    background: linear-gradient(
+        rgba(255, 255, 255, 0.08),
+        rgba(255, 255, 255, 0.08)
+    );
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 10px;
-    color: var(--text); /* Ensures proper text visibility */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    color: var(--text);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* Add position relative to create proper stacking context */
+    position: relative;
+    z-index: 1;
 }
+
+/* Support for browsers without backdrop-filter */
+@supports not ((backdrop-filter: blur(10px)) or (-webkit-backdrop-filter: blur(10px))) {
+    .publication-item {
+        background-color: rgba(30, 30, 30, 0.95); /* Darker, more opaque fallback */
+    }
+}
+
+
 
 /* Hover effect for publication-item */
 .publication-item:hover {
