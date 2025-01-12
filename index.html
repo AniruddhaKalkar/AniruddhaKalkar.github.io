@@ -521,35 +521,61 @@
 
         /* Additional styles for the Publications section */
         .publication-list {
-            list-style: none;
-            padding: 0;
-        }
+    list-style: none;
+    padding: 0;
+    margin: 0; /* Add margin reset for consistency */
+}
 
-        .publication-item {
-            margin-bottom: 1.5rem;
-            padding: 1rem;
-            background: rgba(255, 255, 255, 0.05);
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            border-radius: 10px;
-        }
+.publication-item {
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.05); /* Fallback for older browsers */
+    backdrop-filter: blur(10px); /* Blur effect for supported browsers */
+    -webkit-backdrop-filter: blur(10px); /* Safari/iOS-specific blur */
+    border: 1px solid rgba(255, 255, 255, 0.1); /* Border for subtle separation */
+    border-radius: 10px; /* Rounded corners for aesthetics */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effects */
+}
 
-        .publication-item a {
-            color: var(--primary);
-            text-decoration: none;
-            font-weight: 600;
-        }
+/* Hover effect for publication-item */
+.publication-item:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Subtle shadow for hover */
+}
 
-        .publication-item a:hover {
-            text-decoration: underline;
-        }
+.publication-item a {
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: 600; /* Bold link text for better emphasis */
+}
 
-        .publication-item p {
-            margin: 0.5rem 0 0;
-            font-size: 0.9rem;
-            color: var(--text);
-            opacity: 0.8;
-        }
+.publication-item a:hover {
+    text-decoration: underline; /* Underline on hover for links */
+}
+
+.publication-item p {
+    margin: 0.5rem 0 0;
+    font-size: 0.9rem;
+    color: var(--text);
+    opacity: 0.8; /* Slightly dimmed text for better readability */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .publication-item {
+        padding: 0.8rem; /* Reduce padding for smaller screens */
+        font-size: 0.9rem; /* Adjust font size for smaller screens */
+    }
+
+    .publication-item p {
+        font-size: 0.8rem; /* Smaller paragraph text for mobile */
+    }
+
+    .publication-item:hover {
+        transform: none; /* Disable hover lift effect on mobile */
+        box-shadow: none; /* Remove shadow for better mobile performance */
+    }
+}
 
         /* Additional styles for the Projects section */
         .projects-grid {
