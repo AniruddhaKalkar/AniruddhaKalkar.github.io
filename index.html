@@ -529,54 +529,53 @@
 .publication-item {
     margin-bottom: 1.5rem;
     padding: 1rem;
-    background: rgba(255, 255, 255, 0.05); /* Subtle transparent background */
+    background-color: rgba(255, 255, 255, 0.08); /* Use solid fallback color */
     backdrop-filter: blur(10px); /* Blur effect for supported browsers */
     -webkit-backdrop-filter: blur(10px); /* Safari/iOS-specific blur */
-    border: 1px solid rgba(255, 255, 255, 0.15); /* Slightly higher contrast for borders */
-    border-radius: 10px; /* Smooth rounded corners */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add hover transitions */
-    color: var(--text); /* Ensure proper text visibility */
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Slightly increased border opacity for visibility */
+    border-radius: 10px;
+    color: var(--text); /* Ensures proper text visibility */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 /* Hover effect for publication-item */
 .publication-item:hover {
-    transform: translateY(-3px); /* Slight upward movement on hover */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+    transform: translateY(-3px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .publication-item a {
-    color: var(--primary); /* Ensure prominent link color */
+    color: var(--primary);
     text-decoration: none;
     font-weight: 600;
-    transition: color 0.3s ease;
 }
 
 .publication-item a:hover {
-    text-decoration: underline; /* Underline for hover effect */
+    text-decoration: underline;
 }
 
 .publication-item p {
     margin: 0.5rem 0 0;
     font-size: 0.9rem;
-    color: var(--text); /* Ensure text is visible */
-    opacity: 0.9; /* Slightly more opaque for better contrast */
+    color: var(--text);
+    opacity: 0.9; /* Improved contrast */
 }
 
-/* Responsive Design */
+/* Mobile-specific adjustments */
 @media (max-width: 768px) {
     .publication-item {
-        padding: 0.8rem; /* Reduce padding for smaller screens */
-        font-size: 0.9rem; /* Adjust font size for mobile */
+        padding: 0.8rem;
+        font-size: 0.9rem;
     }
 
     .publication-item p {
-        font-size: 0.8rem; /* Smaller paragraph text for mobile */
+        font-size: 0.8rem;
     }
 
     .publication-item:hover {
-        transform: none; /* Disable hover effects for better touch behavior */
-        box-shadow: none; /* Simplify styles for performance */
+        transform: none; /* Disable hover effect on mobile */
+        box-shadow: none;
     }
 }
 
